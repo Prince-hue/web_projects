@@ -1,0 +1,90 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+img{
+	width: 100%;
+	height: 100vh;
+}
+body{
+	background: url(ball.jpg) center no-repeat;
+	background-size: 100% 100vh;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.header{
+	background: #8e2106;
+	text-align: center;
+}
+.header ul{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+.header ul li{
+	margin: 15px;
+	padding: 15px;
+	transition: 1s;
+	
+}
+.header a{
+	text-decoration: none;
+	color: #fff;
+}
+.home, .header ul li:hover{
+	background: #c53b19;
+	border-radius: 3px;
+}
+.header li img{
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+.aboutUsM{
+	display: none;
+}
+.header li:hover .aboutUsM{
+	display: block;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: -15px;
+	background: #8e2106;
+}
+.header li:hover .aboutUsM ul{
+	display: block;
+	padding: 10px;
+}
+.header li:hover .aboutUsM li{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+} 
+.header li:hover .aboutUsM li:last-child{
+	border-bottom: none;
+}
+.aboutUsM li a{
+	transition: 0.5s;
+}
+.aboutUsM li a:hover{
+	color: #c35a41;
+}
+.aboutUsM img{
+	float: right;
+}
+.marketM{
+	display: none;
+}
+.marketM{
+	transition: 1s;
+}
+.aboutUsM li:hover .marketM{
+	position: absolute;
+	display: block;
+	margin-top: -40px;
+	margin-left: 140px;
+	background: #8e2106;
+}

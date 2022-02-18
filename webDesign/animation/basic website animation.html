@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The website</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background: #877e13;
+		}
+		.header{
+			display: flex;
+			justify-content: space-between;
+    		align-items: center;
+    		flex-direction: column;
+		}
+		h1{
+			margin: 20px;
+			font-weight: 500;
+			transition: color 1s ease-out;
+		}
+		h1:hover{
+			color: palevioletred;
+		}
+		hr{
+			width: 100%;
+			color: orange;
+		}
+		ul{
+			list-style: none;
+			display: flex;
+			align-items: center;
+    		justify-content: space-around;
+    		flex-direction: row;
+		}
+		li{
+			padding: 10px;
+			margin: 5px 40px;
+		}
+		a{
+			text-decoration: none;
+			font-size: 30px;
+			color: rgba(222, 0, 0, 1);
+			transition: all 1s ease;
+		}
+		a:hover{
+			font-size: 35px;
+			color: rgba(222, 0, 0, 0.2);
+		}
+		.wrapper{
+			height: 70vh;
+		}
+		img{
+			width: 100%;
+			height: inherit;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>THE WEBSITE</h1>
+		<hr>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#site">Site</a></li>
+				<li><a href="#inventory">Inventory</a></li>
+				<li><a href="#exit">Exit</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="wrapper">
+		<hr>
+		<img src="woman.jpeg">
+	</div>
+
+</body>
+</html>
